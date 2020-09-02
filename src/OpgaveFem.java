@@ -5,7 +5,7 @@ public class OpgaveFem {
 
     public static void main(String[] args) {
         OpgaveFem opg5 = new OpgaveFem();
-        opg5.wordChecker("EN hellig nossePOSE LAK");
+        opg5.wordChecker("hvad LAVER du meSTer");
     }
 
     public void wordChecker(String sentence) {

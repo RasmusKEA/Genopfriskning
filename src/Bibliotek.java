@@ -11,13 +11,14 @@ public class Bibliotek {
     }
 
     public boolean sameISBN(ArrayList<Bog> bibliotek, String isbn) {
-        StringBuilder b = new StringBuilder();
-        bibliotek.forEach(b::append);
-        if(b.toString().contains(isbn)){
-            System.out.println("ISBN " + isbn + " is in the library");
-            return true;
+        for (Bog book : bibliotek) {
+            if (book.getISBN().equals(isbn)) {
+                System.out.println(isbn);
+                return true;
+            } else {
+                return false;
+            }
         }
         return false;
     }
-
 }
